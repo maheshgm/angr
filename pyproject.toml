@@ -1,5 +1,9 @@
 [build-system]
+<<<<<<< HEAD
 requires = ["setuptools>=61.2", "setuptools-rust", "pyvex==9.2.165"]
+=======
+requires = ["setuptools>=61.2", "setuptools-rust", "pyvex==9.2.170.dev0"]
+>>>>>>> upstream/master
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -18,12 +22,21 @@ requires-python = ">=3.10"
 dependencies = [
     "cxxheaderparser",
     "GitPython",
+<<<<<<< HEAD
     "archinfo==9.2.165",
     "cachetools",
     "capstone==5.0.3",
     "cffi>=1.14.0",
     "claripy==9.2.165",
     "cle==9.2.165",
+=======
+    "archinfo==9.2.170.dev0",
+    "cachetools",
+    "capstone==5.0.3",
+    "cffi>=1.14.0",
+    "claripy==9.2.170.dev0",
+    "cle==9.2.170.dev0",
+>>>>>>> upstream/master
     "mulpyplexer",
     "networkx!=2.8.1,>=2.0",
     "protobuf>=5.28.2",
@@ -32,7 +45,11 @@ dependencies = [
     "pydemumble",
     "pyformlang",
     "pypcode>=3.2.1,<4.0",
+<<<<<<< HEAD
     "pyvex==9.2.165",
+=======
+    "pyvex==9.2.170.dev0",
+>>>>>>> upstream/master
     "rich>=13.1.0",
     "sortedcontainers",
     "sympy",
