@@ -1948,7 +1948,8 @@ class SimCCARMHF(SimCCARM):
                             mapped_classes.append(next(session.both_iter))
                             mapped_classes.append(next(session.both_iter))
                 elif cls == "NO_CLASS":
-                    raise NotImplementedError("Bug. Report to @rhelmot")
+                    continue
+                    #raise NotImplementedError("Bug. Report to @rhelmot")
                 elif cls == "MEMORY":
                     mapped_classes.append(next(session.both_iter))
                 elif cls == "INTEGER":
@@ -1962,7 +1963,8 @@ class SimCCARMHF(SimCCARM):
                     except StopIteration:
                         mapped_classes.append(next(session.both_iter))
                 else:
-                    raise NotImplementedError("Bug. Report to @rhelmot")
+                    continue
+                    #raise NotImplementedError("Bug. Report to @rhelmot")
         except StopIteration:
             session.setstate(state)
             mapped_classes = [next(session.both_iter) for _ in classification]
