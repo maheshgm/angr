@@ -1,8 +1,3 @@
-"""
-Tests using angr's decompiler. We use pytest-insta to create snapshots.
-"""
-
-# pylint: disable=import-error
 from __future__ import annotations
 import logging
 import os
